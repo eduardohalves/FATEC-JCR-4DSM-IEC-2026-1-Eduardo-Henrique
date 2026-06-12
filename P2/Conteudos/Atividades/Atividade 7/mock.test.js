@@ -5,5 +5,5 @@ const api = {
 test("simulação de envio", () => {
   const resposta = api.enviar();
 
-  expect(resposta).toBe("Simulado!");
+  expect(resposta).toBe("Simulado!"); 
 });
