@@ -3,11 +3,15 @@ name: Security Audit
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   audit:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: P2/Conteudos/Atividades/Atividade 7
 
     steps:
       - uses: actions/checkout@v4
